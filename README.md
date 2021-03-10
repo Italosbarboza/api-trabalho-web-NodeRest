@@ -70,4 +70,4 @@ CREATE TABLE `Telefone` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
-Feito cpor Italo da Silva Barboza 👋🏻 [Get in touch!](italo_barboza@hotmail.com)
+Feito por Italo da Silva Barboza 👋🏻 [Get in touch!](https://github.com/Italosbarboza/)
