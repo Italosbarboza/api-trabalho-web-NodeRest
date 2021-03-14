@@ -1,18 +1,14 @@
 import { Router } from "express";
 
-import usersRouter from "@modules/users/infra/http/routes/users.routes";
-import sessionsRouter from "@modules/users/infra/http/routes/sessions.routes";
-import passwordRouter from "@modules/users/infra/http/routes/password.routes";
-import profileRouter from "@modules/users/infra/http/routes/profile.routes";
-import filesRouter from "@modules/files/infra/http/routes/files.routes";
+import cursosRouter from "@modules/cursos/infra/http/routes/cursos.routes";
+import campusRouter from "@modules/campus/infra/http/routes/campus.routes";
+import alunosRouter from "@modules/alunos/infra/http/routes/alunos.routes";
 
 
 const routes = Router();
 
-routes.use("/sessions", sessionsRouter);
-routes.use("/users", usersRouter);
-routes.use("/password", passwordRouter);
-routes.use("/profile", profileRouter);
-routes.use("/files", filesRouter);
+routes.use("/api/cursos", cursosRouter);
+routes.use("/api/campi", campusRouter);
+routes.use("/api/alunos", alunosRouter);
 
 export default routes;

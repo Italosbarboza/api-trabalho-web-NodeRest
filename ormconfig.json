@@ -1,11 +1,11 @@
 [
         {
               "type": "mysql",
-              "host": "dsn-banco.c2fmcgckey1n.us-east-1.rds.amazonaws.com",
+              "host": "35.192.67.142",
               "port": 3306,
-              "username": "admin",
-              "password": "$vidas12345",
-              "database": "sabm",
+              "username": "root",
+              "password": "12357",
+              "database": "universidade",
               "entities": [
                       "./src/modules/**/infra/typeorm/entities/*.ts"
               ],

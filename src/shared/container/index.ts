@@ -1,29 +1,25 @@
 import { container } from "tsyringe";
 
-import "@modules/users/providers";
-import "./providers";
+import ICursosRepository from "@modules/cursos/repositories/ICursosRepository";
+import CursosRepository from "@modules/cursos/infra/typeorm/repositories/CursosRepository";
 
-import IUsersRepository from "@modules/users/repositories/IUsersRepository";
-import UsersRepository from "@modules/users/infra/typeorm/repositories/UsersRepository";
+import ICampusRepository from "@modules/campus/repositories/ICampusRepository";
+import CampusRepository from "@modules/campus/infra/typeorm/repositories/CampusRepository";
 
-import IUsersTokensRepository from "@modules/users/repositories/IUserTokensRepository";
-import UsersTokensRepository from "@modules/users/infra/typeorm/repositories/UserTokensRepository";
+import IAlunosRepository from "@modules/alunos/repositories/IAlunosRepository";
+import AlunosRepository from "@modules/alunos/infra/typeorm/repositories/AlunosRepository";
 
-import IFilesRepository from "@modules/files/repositories/IFilesRepository";
-import FilesRepository from "@modules/files/infra/typeorm/repositories/FilesRepository";
-
-
-container.registerSingleton<IUsersRepository>(
-  "UsersRepository",
-  UsersRepository,
+container.registerSingleton<ICursosRepository>(
+  "CursosRepository",
+  CursosRepository,
 );
 
-container.registerSingleton<IUsersTokensRepository>(
-  "UserTokensRepository",
-  UsersTokensRepository,
+container.registerSingleton<ICampusRepository>(
+  "CampusRepository",
+  CampusRepository,
 );
 
-container.registerSingleton<IFilesRepository>(
-  "FilesRepository",
-  FilesRepository,
+container.registerSingleton<IAlunosRepository>(
+  "AlunosRepository",
+  AlunosRepository,
 );
