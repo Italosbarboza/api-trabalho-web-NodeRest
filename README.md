@@ -6,7 +6,7 @@
 
 ## 🚀 Tecnologias:
 
-Esse projeto foi desenvolvido no Bootcamp GoStack 11.0 da Rocketseat com as seguintes tecnologias:
+Essa API é uma atividade da disciplina de desenvolvimento de software para nuvem, onde utiliza-se as tecnologias:
 
 - [Node.js](https://nodejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
