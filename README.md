@@ -6,7 +6,7 @@
 
 ## 🚀 Tecnologias:
 
-Essa API é uma atividade da disciplina de desenvolvimento de software para nuvem, onde utiliza-se as tecnologias:
+Essa API é uma atividade da disciplina de desenvolvimento de software para web, onde utiliza-se as tecnologias:
 
 - [Node.js](https://nodejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
