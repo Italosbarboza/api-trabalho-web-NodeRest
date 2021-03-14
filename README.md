@@ -17,6 +17,11 @@ Esse projeto foi desenvolvido no Bootcamp GoStack 11.0 da Rocketseat com as segu
 - [JWT](https://jwt.io/)
 - [Bcrypt](https://www.npmjs.com/package/bcrypt)
 
+## 🚀 Comandos para rodar o projeto:
+  
+  1) yarn install
+  2) yarn dev:server
+
 ## 🚀 Criando o banco:
 
 Esse projeto está utilizando o banco do google cloud, SGBD Mysql. Mas, caso desative, para rodar o projeto em outro banco, basta ter o Mysql e rodar os comandos:
