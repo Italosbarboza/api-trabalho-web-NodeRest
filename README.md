@@ -57,7 +57,7 @@ CREATE TABLE `Aluno` (
   `id_curso` int(11) NOT NULL,
   `id_campus` int(11) NOT NULL,
   PRIMARY KEY (`id_aluno`),
-  foreign key (`id_curso`) references `Curso`(`id_curso`),
+  foreign key (`id_curso`) references `Curso`(`id_curso`)
   ON DELETE CASCADE
   ON UPDATE CASCADE,
   foreign key (`id_campus`) references `Campus`(`id_campus`)
@@ -77,5 +77,26 @@ CREATE TABLE `Telefone` (
   ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+## 🚀 Utilizando o Docker:
+
+Instale o docker na sua máquina.
+
+Em seguinda, utilize o seguinte comando para criar sua imagem:
+
+docker run -d --name mysql -e ALLOW_EMPTY_PASSWORD=yes -e MYSQL_PASSWORD=12345 -e MYSQL_USER=root -e MYSQL_DATABASE=universidade -p 3306:3306 bitnami/mysql:latest
+
+Abra o MYSQL Workbench ou a interface gráfica de sua preferência e crie as tabelas utilizando os mesmos comandos mencionados acima.
+
+Caso a nossa aplicação não rode, tente utilizar na sua interface gráfica os comandos a seguir:
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+
+Onde root é seu usuário e localhost é sua URL e password é seu password
+
+Então rode a query para recarregar o privilégio:
+
+flush privileges;
+
+Caso o erro persistir, tente sem o @'localhost'.
 
 Feito por Italo da Silva Barboza 👋🏻 [Get in touch!](https://github.com/Italosbarboza/)
